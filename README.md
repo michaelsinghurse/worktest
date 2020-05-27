@@ -13,9 +13,10 @@ to include:
 - How you intend to solve the problem
 - Practical details about your implementation (e.g. what language you are using)
 
-Be sure to include instructions for each challenge on how to build and run the
-program for evaluation. _**If I cannot run your code, I cannot evaluate you
-effectively.**_ Instructions for macOS, Linux, or Windows acceptable.
+Be sure to include any written notes used in your solution and instructions for
+each challenge on how to build and run the program for evaluation. _**If I
+cannot run your code, I cannot evaluate you effectively.**_ Instructions for
+macOS, Linux, or Windows acceptable.
 
 Fork this repository and deliver your code and written materials by committing
 to the repositories and emailing me the link to your repo (levi@rogoag.com). I
@@ -24,15 +25,28 @@ encourage you to use good git practices while working on these projects.
 If you have additional questions, please email me at levi@rogoag.com with "WORK
 TEST" somewhere in the title line.
 
+Note: These challenges are for evaluation purposes and are not providing Rogo
+any commercial value. Your answers belong to you.
+
 
 ## Challenge #1 (target time 30min)
 
 A 4 wheeled vehicle has a linear sensor mounted to measure steering angle of
 the front wheel (see diagram). Write a function in the language of your choice
-to convert linear distance (current length of the sensor in inches) to steering
-angle in radians where 0 is straight and angle increases counterclockwise.
+to convert linear distance to steering angle.
 
-![diagram.jpg](diagram.jpg)
+The linear sensor is a collabsible piston. `x` is used to represent the length
+in inches of the movable part of the sensor and is the independent variable.
+
+`θ` represents the steering angle. The angle is 0 when the wheels are perfectly
+straight and increases as the wheels turn to the left and decreases as the
+wheels turn to the right. The value of `θ` should be reported in radians.
+
+![diagram.png](diagram.png)
+
+![left.png](left.png)
+
+![right.png](right.png)
 
 Identify any potential problems (any type mechanical or software) with this
 setup and brainstorm possible solutions.
@@ -50,7 +64,7 @@ Bonus: Parse the boundary from the provided `region.kml` KML file and generate
 a new KML file with the updated boundary.
 
 
-## Challenge #3 (target time 4-8hr)
+## Challenge #3 (target time 4+ hr)
 
 Build and deploy a task management app which meets the following requirements:
 
@@ -94,4 +108,4 @@ After completing the app, provide a short summary describing:
 - What requirements you were unable to meet (if any)
 - What features are actually working in the app
 
-Do not go back and change your answers from before you started.
+Do not go back and change your pre-challenge summary after completing the app.
