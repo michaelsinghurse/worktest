@@ -48,13 +48,15 @@ I'm thinking the state could be an array and then there would be an algorithm to
 determine the angle considering the current `x` value and the recent `x` values.
 One challenge with this solution is how to set the state at initialization when
 you don't have recent `x` values, say when the machine is first started. What do 
-you do when the first `x` value past to the object is indeterminate and you
-don't have a recent history.
+you do when the first `x` value passed to the object is indeterminate and you
+don't have a recent history? You may have to save the the wheel's angle to disk
+when the machine shuts down.
 
 I'd say a better solution is to move the piston if possible. If it is feasible 
 to move the pin of the piston, i.e. the spot where the piston is attached to 
 the frame of the vehicle, perhaps it could be moved to a location where there 
 are no duplicate `x` values. This may work if you moved the piston up a few
-inches so that the pin is almost in the same line with the pin of the wheel.
+inches so that the pin is almost in the same horizontal line with the pin 
+of the wheel.
 
 Time spent on problem: 5 hours
