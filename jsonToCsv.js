@@ -14,7 +14,7 @@ if (!JSON_FILE || !CSV_FILE) {
 
 fs.promises.readFile(JSON_FILE, "utf8")
   .then(data => {
-    let csv = "";
+    let csv = "id,latitude,longitude\n";
 
     JSON.parse(data)["coordinates"].forEach((pair, index) => {
       csv += `${index + 1},${pair[0]},${pair[1]}\n`;
