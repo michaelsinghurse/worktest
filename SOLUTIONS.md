@@ -60,3 +60,30 @@ inches so that the pin is almost in the same horizontal line with the pin
 of the wheel.
 
 Time spent on problem: 5 hours
+
+## Challenge #2
+
+### Pre-Challenge Summary
+
+Like the last problem, I believe the programming of this solution will be fairly
+trivial once I work out the math. To start, I'd like to get a sense for what 
+the data looks like. I'm going to import the json into Excel and put it on 
+a chart. (I may have to write a script to convert the json to a csv file first.)
+I should be able to identify any outliers from looking at the chart. After 
+applying the smoothing method, too, I can chart the points and see what the 
+function did.
+
+My method for solving this as follows:
+1) Chart the points in Excel. I may or may need to convert the json to csv.
+2) Research statistical methods to smooth the data and remove outliers. I 
+don't know at this point whether I can simply use a statistics library to do
+this or whether I need to find the math equations and write my own function.
+3) Apply the method to the points.
+4) Chart the points again and see what the function did.
+ 
+Regarding the language used, I'll use JavaScript again unless I find a
+third-party library for the statistical method. I'd say Python or R would be the
+most likely languages used if there is one.
+
+### Post-Challenge Summary
+
