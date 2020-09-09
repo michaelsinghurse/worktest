@@ -53,13 +53,13 @@ don't have a recent history? You may have to save the the wheel's angle to disk
 when the machine shuts down.
 
 I'd say a better solution is to move the piston if possible. If it is feasible 
-to move the pin of the piston, i.e. the spot where the piston is attached to 
-the frame of the vehicle, perhaps it could be moved to a location where there 
-are no duplicate `x` values. This may work if you moved the piston up a few
-inches so that the pin is almost in the same horizontal line with the pin 
-of the wheel.
+to move the pin of the piston (I'm calling the pin the spot where the piston is 
+attached to the frame of the vehicle) perhaps it could be moved to a location 
+where there are no duplicate `x` values. This may work if you moved the piston 
+up a few inches so that the pin is almost in the same horizontal line with the 
+pin of the wheel.
 
-Time spent on problem: 5 hours
+Time spent on challenge: 5 hours
 
 ## Challenge #2
 
@@ -74,7 +74,7 @@ applying the smoothing method, too, I can chart the points and see what the
 function did.
 
 My method for solving this as follows:
-1) Chart the points in Excel. I may or may need to convert the json to csv.
+1) Chart the points in Excel. I may or may not need to convert the json to csv.
 2) Research statistical methods to smooth the data and remove outliers. I 
 don't know at this point whether I can simply use a statistics library to do
 this or whether I need to find the math equations and write my own function.
@@ -106,7 +106,7 @@ which is in the same directory, and write to a file `regionSmoothed.json`. These
 variables are set at the top of the file and can be modified. And so too can the
 maximum distance between points by changing the `TOLERANCE` value.
 
-Time spent on creating this file: 30 minutes.
+Time spent on challenge (after corresponding with Drew): 30 minutes.
 
 ## Challenge #3
 
@@ -115,9 +115,9 @@ Time spent on creating this file: 30 minutes.
 I'm going to run this app on my development machine using Node and Express on
 the server and HTML, CSS, and JavaScript on the browser/client. For the data
 store, rather than setting up a database, I'm just going to store the data as
-JSON in a file. The data will consist of the tasks, each task being an object
-with keys for the task id, the task title, and whether the task is done. Every
-client who connects with the server will view, edit, and delete the same set of 
+JSON in a file. The data will consist of an array of tasks, each task being an 
+object with keys for the task id, the task title, and whether the task is done. 
+Every client who connects with the server will consume the same set of 
 tasks. There won't be a log in feature where users can view their own tasks.
 This would have to be a future feature.
 
@@ -125,6 +125,30 @@ I don't forsee a problem building requirements B1 to B3 within 4 hours. I'm not
 familiar with building an offline app, so requirements B4 and B5 may not get
 completed. I'll do as much as I can within 4 hours.
 
+### Post-Challenge Summary
 
+I have the server side code built out, but haven't completed the client side.
+Here's the status on each of the requirements:
 
+B1: Incomplete
+B2: Complete
+B3: Incomplete
+B4: Incomplete
+B5: Incomplete
 
+A1: Complete
+A2: Complete
+A3: Complete
+
+O1: Complete
+O2: Complete
+
+On page load, the app loads and displays all the tasks in the data store. I was
+working on the form for adding a task when I ran out of time. 
+
+To run the app, download the files and enter `npm install` from the command
+line. (`npm` is the Node Package Manager). After all the dependencies install,
+type `npm start`. The server will then start and will be listening on port 3000.
+You can access it by navigating to `http://localhost:3000/`.
+
+Time spent on challenge: 4 hours.
