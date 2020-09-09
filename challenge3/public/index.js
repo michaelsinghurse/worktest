@@ -51,7 +51,6 @@ const App = {
   },
   
   handleOverlayClick(event) {
-    console.log(event.currentTarget);
     event.currentTarget.remove();
     document.querySelector(".create-task").remove();
   },
