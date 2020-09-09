@@ -1,0 +1,74 @@
+main {
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+[data-is-done="true"] {
+  background-color: silver;
+}
+
+[data-is-done="true"] h2 {
+  text-decoration: line-through;
+}
+
+.btn-create {
+  background-color: blue;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  color: white;
+}
+
+li button {
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  width: 75px;
+}
+
+.btn-done {
+  background-color: green;
+}
+
+.btn-edit {
+  background-color: brown;
+}
+
+.btn-delete {
+  background-color: red;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.create-task {
+  width: 600px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -300px;
+  background-color: white;
+  z-index: 3;
+  padding: 10px;
+}
