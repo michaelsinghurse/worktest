@@ -68,7 +68,7 @@ Time spent on problem: 5 hours
 Like the last problem, I believe the programming of this solution will be fairly
 trivial once I work out the math. To start, I'd like to get a sense for what 
 the data looks like. I'm going to import the json into Excel and put it on 
-a chart. (I may have to write a script to convert the json to a csv file first.)
+a chart. (I may have to write a script to convert the json to csv first.)
 I should be able to identify any outliers from looking at the chart. After 
 applying the smoothing method, too, I can chart the points and see what the 
 function did.
@@ -86,4 +86,30 @@ third-party library for the statistical method. I'd say Python or R would be the
 most likely languages used if there is one.
 
 ### Post-Challenge Summary
+
+I spent about 2 hours on step 1 above. I wrote a function `jsonToCsv.js` that
+converts the `region.json` file into a csv file. I then charted the points using
+Excel and saw that 3 of them were obvious outliers.
+
+I then emailed Drew to ask for clarification about the amount of time I'm
+spending on the problems. Drew suggested that I stick closer to the suggested
+times even if my solutions have to be very simple.
+
+So, rather than trying to find a statistical method to smooth the data, I
+created a very simple function that takes the array of points and a maximum
+distance between consecutive points as inputs, and returns a new array that has 
+all the points that are too far away from the previous point removed.
+
+The function is in `challenge2.js`. You can invoke it with `node challenge2.js`
+from the command line. Currently it is set to read from the file `region.json`,
+which is in the same directory, and write to a file `regionSmoothed.json`. These
+variables are set at the top of the file and can be modified. And so too can the
+maximum distance between points by changing the `TOLERANCE` value.
+
+Time spent on creating this file: 30 minutes.
+
+## Challenge #3
+
+
+
 
