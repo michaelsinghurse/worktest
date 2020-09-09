@@ -110,6 +110,21 @@ Time spent on creating this file: 30 minutes.
 
 ## Challenge #3
 
+### Pre-Challenge Summary
+
+I'm going to run this app on my development machine using Node and Express on
+the server and HTML, CSS, and JavaScript on the browser/client. For the data
+store, rather than setting up a database, I'm just going to store the data as
+JSON in a file. The data will consist of the tasks, each task being an object
+with keys for the task id, the task title, and whether the task is done. Every
+client who connects with the server will view, edit, and delete the same set of 
+tasks. There won't be a log in feature where users can view their own tasks.
+This would have to be a future feature.
+
+I don't forsee a problem building requirements B1 to B3 within 4 hours. I'm not
+familiar with building an offline app, so requirements B4 and B5 may not get
+completed. I'll do as much as I can within 4 hours.
+
 
 
 
